@@ -11,9 +11,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+
+  user-select: none;
+  pointer-events: none;
 }
 
-.scroll-button
+.scroll-button.show {
+  opacity: 1;
+  transition: all 250ms ease-in-out;
+
+  cursor: pointer;
+  pointer-events: all;
+}
 
 .scroll-up {
   font-size: 35px;

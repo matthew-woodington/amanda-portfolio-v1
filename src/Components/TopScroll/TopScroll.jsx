@@ -14,8 +14,12 @@ function TopScroll() {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll')
-  })
+    window.addEventListener('scroll', showBtn);
+
+    return () => {
+      window.removeEventListener('scroll', showBtn);
+    }
+  }, [])
 
   const goToTop = () => {
     window.scrollTo({
@@ -25,7 +29,7 @@ function TopScroll() {
   }
 
   return (
-    <div className='scroll-button' onClick={() => goToTop()}>
+    <div className={!show ? 'scroll-button' : 'scroll-button show'} onClick={() => goToTop()}>
       <RxCaretUp className="scroll-up" />
     </div>
   )
