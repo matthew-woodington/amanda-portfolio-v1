@@ -1,22 +1,13 @@
-#root {
-  --bg-dark: #2D325A;
-  --bg-white: #F9F8FD;
-  --orange1: #D98F66;
-}
-
-.App {
+.app {
   text-align: center;
-  background-color: var(--offwht);
+  background-color: var(--bg-white);
   min-height: 100vh;
+  min-width: 100vw;
+  color: black;
+
+  position: relative;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  scroll-behavior: smooth;
+.main-section {
+  min-width: 100vw;
 }
-
-

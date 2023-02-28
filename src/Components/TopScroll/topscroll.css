@@ -1,0 +1,20 @@
+.scroll-button {
+  position: fixed;
+  bottom: 3vh;
+  right: 3vh;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--bg-dark);
+  color: var(--bg-white);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-button
+
+.scroll-up {
+  font-size: 35px;
+}
