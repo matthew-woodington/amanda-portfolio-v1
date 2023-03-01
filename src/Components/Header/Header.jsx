@@ -8,33 +8,33 @@ function Header() {
     <div className="navbar">
 
       <ul className="socials">
-        <li>
-          <a href="#">Instagram</a>
+        <li className="social-item">
+          <a className="link" href="#">Instagram</a>
         </li>
-        <li>
-          <a href="#">Facebook</a>
+        <li className="social-item">
+          <a className="link" href="#">Facebook</a>
         </li>
-        <li>
-          <a href="#">LinkedIn</a>
+        <li className="social-item">
+          <a className="link" href="#">LinkedIn</a>
         </li>
       </ul>
 
-      <div className="logo-container">
+      {/* <div className="logo-container">
         <img src={HeroIcon} alt="logo" className="logo" />
-      </div>
+      </div> */}
 
       <ul className="navlinks">
-        <li>
-          <a href="#">Home</a>
+        <li className="nav-item">
+          <a className="link" href="#">Home</a>
         </li>
-        <li>
-          <a href="#">About</a>
+        <li className="nav-item">
+          <a className="link" href="#">About</a>
         </li>
-        <li>
-          <a href="#">Art</a>
+        <li className="nav-item">
+          <a className="link" href="#">Art</a>
         </li>
-        <li>
-          <a href="#">Contact</a>
+        <li className="nav-item">
+          <a className="link" href="#">Contact</a>
         </li>
       </ul>
       
