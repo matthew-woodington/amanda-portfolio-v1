@@ -1,7 +1,11 @@
 import "./header.css"
 import React, { useEffect, useState } from 'react'
-import HeroIcon from "../../assets/images/HeroIcon.jpg"
+// import HeroIcon from "../../assets/images/HeroIcon.jpg"
 import useMediaQuery from "../../hooks/useMediaQuery"
+import {FiInstagram} from 'react-icons/fi'
+import {FaLinkedinIn} from 'react-icons/fa'
+import {FaFacebookF} from 'react-icons/fa'
+import {FiMail} from 'react-icons/fi'
 
 
 function Header() {
@@ -74,6 +78,21 @@ function Header() {
             </li>
             <li className="mobile-nav-item" onClick={() => setMenuToggle(!menuToggle)}>
               <a className="mobile-link" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <ul className="mobile-socials">
+            <li className="mobile-social-item">
+              <a className="icon-link" href="#"><FiInstagram /></a>
+            </li>
+            <li className="mobile-social-item">
+              <a className="icon-link" href="#"><FaFacebookF /></a>
+            </li>
+            <li className="mobile-social-item">
+              <a className="icon-link" href="#"><FaLinkedinIn /></a>
+            </li>
+            <li className="mobile-social-item">
+              <a className="icon-link" href="#"><FiMail /></a>
             </li>
           </ul>
 
