@@ -1,7 +1,6 @@
 .navbar {
   width: 100vw;
   height: 100px;
-  /* background-color: var(--bg-dark); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,7 +11,9 @@
 
   backdrop-filter: blur(1px);
 
-  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0.9) 85%);
+  /* background-color: var(--bg-white); */
+  /* background-color: rgba(249, 248, 253, 0.5); */
+  background: linear-gradient(0deg, rgba(249, 248, 253, 0) 0%, rgba(249, 248, 253,0.85) 35%, rgba(249, 248, 253, 1) 85%);
 }
 
 /* .logo-container {
@@ -59,4 +60,95 @@
 .social-item:hover::after, .nav-item:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.mobile-button {
+  width: 30px;
+  height: 25px;
+  position: relative;
+  z-index: 60;
+
+  border: none;
+  background: transparent;
+
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.mobile-button > span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background-color: var(--bg-dark);
+  transition: all .25s ease-in-out;
+}
+
+.mobile-button > span:nth-child(1) {
+  top: 0%;
+}
+
+.mobile-button > span:nth-child(2) {
+  top: 50%;
+}
+
+.mobile-button > span:nth-child(3) {
+  top: 100%;
+}
+
+.mobile-button.open > span:nth-child(1) {
+  top: 50%;
+  transform: rotate(135deg);
+}
+
+.mobile-button.open > span:nth-child(2) {
+  top: 50%;
+  opacity: 0;
+}
+
+.mobile-button.open > span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-135deg);
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80vw;
+  height: 100vh;
+  background-color: var(--bg-white);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  transform: translateX(100%);
+  transition: all 500ms ease-in-out;
+}
+
+.mobile-nav.open {
+  transform: translateX(0);
+  box-shadow: 23px 0px 300px -43px rgba(0,0,0,0.75);
+  transition: all 500ms ease-in-out;
+}
+
+
+
+.mobilelinks {
+  margin-top: 150px;
+  text-align: left;
+}
+
+.mobile-nav-item {
+  margin-bottom: 20px;
+}
+
+.mobile-link {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--bg-dark);
 }

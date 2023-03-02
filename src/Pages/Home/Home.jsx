@@ -1,6 +1,6 @@
 import "./home.css"
 import React from 'react'
-import HeroImage from '../../assets/images/art-desk.jpg'
+// import HeroImage from '../../assets/images/art-desk.jpg'
 import HeroIcon from "../../assets/images/HeroIcon.jpg"
 import useMediaQuery from '../../hooks/useMediaQuery'
 
@@ -20,7 +20,8 @@ function Home() {
         ) : 'medium-screen'}
         className="hero-graphic"
       >
-        <img className="hero-img" src={HeroImage} alt="" />
+        {/* <img className="hero-img" src={HeroImage} alt="" /> */}
+        <div className="overlay"></div>
 
         <div class="custom-shape-divider-bottom-1677691972">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
