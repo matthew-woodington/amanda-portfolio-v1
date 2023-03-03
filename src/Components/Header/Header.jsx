@@ -4,7 +4,9 @@ import React, { useEffect, useState } from 'react'
 import useMediaQuery from "../../hooks/useMediaQuery"
 import {FiInstagram} from 'react-icons/fi'
 import {FaLinkedinIn} from 'react-icons/fa'
+import {FiLinkedin} from 'react-icons/fi'
 import {FaFacebookF} from 'react-icons/fa'
+import {FiFacebook} from 'react-icons/fi'
 import {FiMail} from 'react-icons/fi'
 
 
@@ -28,13 +30,16 @@ function Header() {
         <>
           <ul className="socials">
             <li className="social-item">
-              <a className="link" href="#">Instagram</a>
+              <a className="link" href="#"><FiInstagram /></a>
             </li>
             <li className="social-item">
-              <a className="link" href="#">Facebook</a>
+              <a className="link" href="#"><FiFacebook /></a>
             </li>
             <li className="social-item">
-              <a className="link" href="#">LinkedIn</a>
+              <a className="link" href="#"><FiLinkedin /></a>
+            </li>
+            <li className="social-item">
+              <a className="link" href="#"><FiMail /></a>
             </li>
           </ul>
 
