@@ -45,10 +45,10 @@ function Header() {
 
           <ul className="navlinks">
             <li className="nav-item">
-              <a className="link" href="#">Home</a>
+              <a className="link" href="#home">Home</a>
             </li>
             <li className="nav-item">
-              <a className="link" href="#">About</a>
+              <a className="link" href="#about">About</a>
             </li>
             <li className="nav-item">
               <a className="link" href="#">Art</a>
