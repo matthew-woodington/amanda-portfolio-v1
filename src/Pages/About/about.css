@@ -13,7 +13,7 @@
 
 .about-media {
   width: 40%;
-  height: 500px;
+  max-height: 500px;
   position: relative;
 
   display: grid;
@@ -21,9 +21,22 @@
   grid-template-rows: repeat(6, 1fr);
 }
 
+.about-media.medium {
+  width: 60%;
+  margin-bottom: 100px;
+}
+
+.about-media.medium > .overlay-text {
+  width: 150px;
+}
+
 .about-media.mobile {
   width: 80%;
   margin-bottom: 100px;
+}
+
+.about-media.mobile > .overlay-text {
+  width: 100px;
 }
 
 .studio-container {
@@ -33,8 +46,9 @@
 }
 
 .studio {
-  height: 100%;
-  object-fit: contain;
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 .portrait-container {
@@ -47,30 +61,20 @@
 
 .portrait {
   width: 100%;
-  object-fit: contain;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 .overlay-text {
   position: absolute;
   width: 200px;
   top: -30px;
-  left: -40px;
+  left: -20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
-/* .cursive-display {
-  font-family: var(--cursive);
-  font-size: 70px;
-  color: var(--bg-dark);
-  transform: rotate(-10deg) skew(-10deg, 0);
-}
-
-.line-2 {
-  transform: rotate(-10deg) skew(-10deg, 0) translateY(-50px);
-} */
 
 .aboutpng {
   width: 100%;
@@ -80,8 +84,21 @@
   width: 40%;
 }
 
+.about-text.medium {
+  width: 60%;
+}
+
+.about-text.medium > .text-header > .bg-text {
+  font-size: 15vw;
+}
+
 .about-text.mobile {
   width: 80%;
+}
+
+.about-text.mobile > .text-header > .bg-text {
+  font-size: 22vw;
+  line-height: 50%;
 }
 
 .text-header {
@@ -94,7 +111,8 @@
   width: 100%;
   font-family: var(--display);
   font-weight: 800;
-  font-size: 120px;
+  font-size: 10vw;
+  /* font-size: clamp(10vw, 15vw, 22vw); */
   line-height: 0;
   text-transform: uppercase;
   color: var(--display-text-opacity);

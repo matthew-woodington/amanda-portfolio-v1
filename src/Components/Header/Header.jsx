@@ -69,7 +69,7 @@ function Header() {
       )}
       
       {isBelowLargeScreen && (
-        <div className={menuToggle ? "mobile-nav open" : "mobile-nav"}>
+        <div className={menuToggle ? "mobile-nav open" : "mobile-nav hidden"}>
 
           <ul className="mobilelinks">
             <li className="mobile-nav-item" onClick={() => setMenuToggle(!menuToggle)}>

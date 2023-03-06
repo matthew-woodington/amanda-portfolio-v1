@@ -2,12 +2,5 @@
   text-align: center;
   background-color: var(--bg-white);
   min-height: 100vh;
-  min-width: 100vw;
   color: black;
-
-  position: relative;
-}
-
-.main-section {
-  min-width: 100vw;
 }

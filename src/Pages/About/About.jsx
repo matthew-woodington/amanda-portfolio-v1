@@ -8,10 +8,15 @@ import useMediaQuery from '../../hooks/useMediaQuery'
 
 function About() {
   const isBelowLargeScreen = useMediaQuery("(max-width: 1060px)")
+  const isSmallScreen = useMediaQuery("(max-width: 480px)")
 
   return (
     <div id="about" className={!isBelowLargeScreen ? 'about' : 'about mobile'}>
-      <div className={!isBelowLargeScreen ? 'about-media' : 'about-media mobile'}>
+      <div className={isSmallScreen ? (
+        'about-media mobile'
+      ) : isBelowLargeScreen ? (
+        'about-media medium'
+      ) : 'about-media'}>
         <div className="studio-container">
           <img src={studio} alt="" className="studio" />
         </div>
@@ -19,12 +24,14 @@ function About() {
           <img src={portrait} alt="" className="portrait" />
         </div>
         <div className="overlay-text">
-          {/* <span className="cursive-display">About</span>
-          <span className="cursive-display line-2">Me</span> */}
           <img src={abouttext} alt="" className="aboutpng" />
         </div>
       </div>
-      <div className={!isBelowLargeScreen ? 'about-text' : 'about-text mobile'}>
+      <div className={isSmallScreen ? (
+        'about-text mobile'
+      ) : isBelowLargeScreen ? (
+        'about-text medium'
+      ) : 'about-text'}>
         <div className="text-header">
           <div className="bg-text">Hello</div>
           <h1 className="about-title">Im Amanda</h1>
