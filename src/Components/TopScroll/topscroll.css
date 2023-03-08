@@ -17,6 +17,8 @@
 
   user-select: none;
   pointer-events: none;
+
+  z-index: 50;
 }
 
 .scroll-button.show {

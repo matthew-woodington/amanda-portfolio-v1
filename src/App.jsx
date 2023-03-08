@@ -1,4 +1,5 @@
 import './App.css'
+import React, { useState } from 'react'
 import Header from './Components/Header/Header'
 import TopScroll from './Components/TopScroll/TopScroll'
 import About from './Pages/About/About'
@@ -10,8 +11,10 @@ function App() {
     <div className="app">
       <TopScroll />
       <Header />
-      <Home />
-      <About />
+      <div className="main-pages">
+        <Home />
+        <About />
+      </div>
     </div>
   )
 }

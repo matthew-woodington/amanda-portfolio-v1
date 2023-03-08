@@ -34,4 +34,8 @@
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
+
+  /* outline: 1px solid red !important;
+  opacity: 1 !important;
+  visibility: visible !important; */
 }
