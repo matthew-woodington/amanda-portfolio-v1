@@ -11,7 +11,7 @@ function About() {
   const isSmallScreen = useMediaQuery("(max-width: 480px)")
 
   return (
-    <div id="about" className={!isBelowLargeScreen ? 'about' : 'about mobile'}>
+    <div id="about" className={!isBelowLargeScreen ? 'about main-page' : 'about mobile main-page'}>
       <div className={isSmallScreen ? (
         'about-media mobile'
       ) : isBelowLargeScreen ? (

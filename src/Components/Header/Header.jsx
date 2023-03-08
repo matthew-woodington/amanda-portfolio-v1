@@ -59,10 +59,10 @@ function Header() {
               <a className="link" href="#about">About</a>
             </li>
             <li className="nav-item">
-              <a className="link" href="#">Art</a>
+              <a className="link" href="#art">Art</a>
             </li>
             <li className="nav-item">
-              <a className="link" href="#">Contact</a>
+              <a className="link" href="#contact">Contact</a>
             </li>
           </ul>
         </>
@@ -81,16 +81,16 @@ function Header() {
 
           <ul className="mobilelinks">
             <li className="mobile-nav-item" onClick={() => setMenuToggle(!menuToggle)}>
-              <a className="mobile-link" href="#">Home</a>
+              <a className="mobile-link" href="#home">Home</a>
             </li>
             <li className="mobile-nav-item" onClick={() => setMenuToggle(!menuToggle)}>
-              <a className="mobile-link" href="#">About</a>
+              <a className="mobile-link" href="#about">About</a>
             </li>
             <li className="mobile-nav-item" onClick={() => setMenuToggle(!menuToggle)}>
-              <a className="mobile-link" href="#">Art</a>
+              <a className="mobile-link" href="#art">Art</a>
             </li>
             <li className="mobile-nav-item" onClick={() => setMenuToggle(!menuToggle)}>
-              <a className="mobile-link" href="#">Contact</a>
+              <a className="mobile-link" href="#contact">Contact</a>
             </li>
           </ul>
 

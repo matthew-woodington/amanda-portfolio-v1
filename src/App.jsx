@@ -4,6 +4,7 @@ import Header from './Components/Header/Header'
 import TopScroll from './Components/TopScroll/TopScroll'
 import About from './Pages/About/About'
 import Home from './Pages/Home/Home'
+import Art from './Pages/Art/Art'
 
 function App() {
 
@@ -11,9 +12,10 @@ function App() {
     <div className="app">
       <TopScroll />
       <Header />
-      <div className="main-pages">
+      <div className="main-page">
         <Home />
         <About />
+        <Art />
       </div>
     </div>
   )
