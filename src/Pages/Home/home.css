@@ -58,7 +58,7 @@
 }
 
 .custom-shape-divider-bottom-1677691972 .shape-fill {
-  fill: #bbbbbb;
+  fill: var(--grey1);
 }
 
 /** For mobile devices **/
