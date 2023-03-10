@@ -9,6 +9,7 @@
 .about.mobile {
   flex-direction: column;
   margin-top: 90px;
+  margin-bottom: 100px;
 }
 
 .about-media {

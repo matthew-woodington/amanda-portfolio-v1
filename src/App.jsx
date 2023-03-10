@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="app">
-      <TopScroll />
+      {/* <TopScroll /> */}
       <Header />
       <div className="main-page">
         <Home />
