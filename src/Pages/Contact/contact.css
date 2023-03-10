@@ -1,0 +1,126 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-main {
+  width: 50%;
+  min-height: 400px;
+}
+
+.contact-head {
+  text-align: left;
+  position: relative;
+  height: fit-content;
+  margin-bottom: 30px;
+}
+
+.contact-title {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 100px;
+  line-height: 100px;
+  text-transform: uppercase;
+
+  color: var(--display-text-opacity);
+}
+
+.contact-subtitle {
+  font-family: var(--cursive);
+  font-size: 50px;
+  line-height: 50px;
+
+  color: var(--bg-dark);
+
+  position: absolute;
+  bottom: -5px;
+  left: 15%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form > label {
+  margin-bottom: 2px;
+}
+
+.form > input, .form > textarea {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid var(--grey1);
+  border-radius: 5px;
+  background-color: var(--bg-white);
+}
+
+.form > input:focus, .form > textarea:focus {
+  outline: none;
+}
+
+.send-btn {
+  width: 200px;
+  cursor: pointer;
+  padding: 10px 15px;
+
+  background-color: var(--bg-dark);
+  border: none;
+  border-radius: 5px;
+  color: var(--bg-white);
+
+  font-family: var(--display);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.send-btn:hover {
+  background-color: #8389bf;
+}
+
+@media (max-width: 1060px) {
+  .contact-main {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-title {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  
+  .contact-subtitle {
+    font-size: 45px;
+    line-height: 45px;
+  
+    position: absolute;
+    bottom: -5px;
+    left: 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-main {
+    width: 90%;
+  }
+
+  .contact-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  
+  .contact-subtitle {
+    font-size: 35px;
+    line-height: 35px;
+  
+    position: absolute;
+    bottom: -5px;
+    left: 15%;
+  }
+
+}
