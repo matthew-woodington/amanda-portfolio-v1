@@ -12,18 +12,23 @@ function Contact() {
           <h1 className='contact-title'>Contact</h1>
           <h2 className='contact-subtitle'>Let's Talk!</h2>
         </div>
-        <div className="contact-form">
-          <form className='form' ref={form}>
-            <label htmlFor="name">Name</label>
-            <input type="text" name='user_name' />
-            <label htmlFor="email">Email</label>
-            <input type="text" name='user_email' />
-            <label htmlFor="name">Message</label>
-            <textarea name="message" rows={3} />
-            <button className='send-btn' type="submit">
-              Send
-            </button>
-          </form>
+        <div className="contact-body">
+          <div className="contact-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+          </div>
+          <div className="contact-form">
+            <form className='form' ref={form}>
+              <label htmlFor="name">Name</label>
+              <input type="text" name='user_name' />
+              <label htmlFor="email">Email</label>
+              <input type="text" name='user_email' />
+              <label htmlFor="name">Message</label>
+              <textarea name="message" rows={3} />
+              <button className='send-btn' type="submit">
+                Send
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </div>
