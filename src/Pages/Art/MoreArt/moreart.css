@@ -1,0 +1,23 @@
+.moreart {
+  min-height: 100px;
+  background-color: red;
+}
+
+.button-section {
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.art-grid {
+  background-color: blue;
+
+  height: 0;
+  transition: all 1s ease-in-out;
+}
+
+.art-grid.expand {
+  height: 300px;
+}

@@ -1,38 +1,43 @@
 import "./art.css"
 import React, { useEffect, useRef, useState } from 'react'
-import art1 from '../../assets/images/art1.jpeg'
-import art2 from '../../assets/images/art2.jpeg'
-import art3 from '../../assets/images/art3.jpeg'
-import art4 from '../../assets/images/art4.jpeg'
+// import art1 from '../../assets/images/art1.jpeg'
+// import art2 from '../../assets/images/art2.jpeg'
+// import art3 from '../../assets/images/art3.jpeg'
+// import art4 from '../../assets/images/art4.jpeg'
+
+import painting from "../../assets/images/amandaswebsite/oil-painting.jpg"
+import drawing from "../../assets/images/amandaswebsite/drawing4.jpg"
+import photography from "../../assets/images/amandaswebsite/portraits6.jpg"
+import design from "../../assets/images/amandaswebsite/design1.png"
+import MoreArt from "./MoreArt/MoreArt"
 
 const ART_LIST = [
   {
     number: '01',
-    title: 'Art One',
-    description: 'One Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    image: art1,
+    title: 'Painting',
+    description: "Experience and speciality in abstract art, specifically with acrylic and oil paint.",
+    image: painting,
 
   },
   {
     number: '02',
-    title: 'Art Two',
-    description: 'Two Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    image: art2,
+    title: 'Drawing',
+    description: 'Experience and speciality in pencil, charcoal, and ink drawings.',
+    image: drawing,
 
   },
   {
     number: '03',
-    title: 'Art Three',
-    description: 'Three Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    image: art3,
+    title: 'Photos',
+    description: 'Experience and speciality in senior pictures, graduation photos, engagement photos, and nature focused landscapes and content.',
+    image: photography,
 
   },
   {
     number: '04',
-    title: 'Art Four',
-    description: 'Four Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    image: art4,
-
+    title: 'Design',
+    description: 'Experience and speciality in Adobe Photoshop, Illustrator, InDesign, and Canva.',
+    image: design,
   }
 ]
 
@@ -88,7 +93,8 @@ function Art() {
           </div>
           <div className="info-container">
             <p className="info-text">{display.description}</p>
-            <span className="info-number">{display.number}</span>
+            <div className="info-number">{display.number}</div>
+            <div className="info-quote">&#8220;</div>
           </div>
           <div className="display-buttons">
             <button id="dispbtn 0" className="toggle-btn active" onClick={() => changeDisplay(0)}><div className="btn-icon" /></button>
@@ -98,6 +104,8 @@ function Art() {
           </div>
         </div>
       </section>
+
+      <MoreArt />
 
       <div className="art-outro">
         <div class="bottom-divider">

@@ -1,24 +1,22 @@
 import "./about.css"
 import React from 'react'
-import studio from '../../assets/images/art-studio.jpg'
-import portrait from '../../assets/images/portrait.jpg'
+import portfolio1 from '../../assets/images/amandaswebsite/portfolio1.jpg'
+import studio from '../../assets/images/amandaswebsite/standing-w-painting.jpg'
 import abouttext from '../../assets/images/about-text.png'
-import useMediaQuery from '../../hooks/useMediaQuery'
+
 
 
 function About() {
-  const isBelowLargeScreen = useMediaQuery("(max-width: 1060px)")
-  const isSmallScreen = useMediaQuery("(max-width: 480px)")
-
   return (
     <div id="about" className="about main-page">
       <div className="about-container">
         <div className='about-media'>
           <div className="studio-container">
+            <div className="overlay"></div>
             <img src={studio} alt="" className="studio" />
           </div>
           <div className="portrait-container">
-            <img src={portrait} alt="" className="portrait" />
+            <img src={portfolio1} alt="" className="portrait" />
           </div>
           <div className="overlay-text">
             <img src={abouttext} alt="" className="aboutpng" />
