@@ -1,6 +1,6 @@
 .moreart {
   min-height: 100px;
-  background-color: red;
+  background-color: var(--grey1);
 }
 
 .button-section {
@@ -11,13 +11,141 @@
   align-items: center;
 }
 
+.exp-btn {
+  transition: all 0.2s ease-in-out;
+  height: 50px;
+  width: 150px;
+
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  overflow: hidden;
+
+  border: 2px solid var(--bg-dark);
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.exp-btn:hover {
+  background-color: var(--bg-dark);
+}
+
+.exp-btn:hover::before, .exp-btn:hover::after {
+  color: var(--bg-white);
+}
+
+.exp-btn::before, .exp-btn::after {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--display);
+  text-transform: uppercase;
+  font-size: 20px;
+  color: var(--bg-dark);
+}
+
+.exp-btn::before {
+  content: 'See More';
+  top: 0;
+  left: 0;
+  opacity: 1;
+
+  transition: all 0.6s ease-in-out;
+}
+
+.exp-btn::after {
+  content: 'Hide';
+  top: 100%;
+  left: 0;
+  opacity: 0;
+
+  transition: all 0.6s ease-in-out;
+
+}
+
+.exp-btn.hide::before {
+  transition: all 0.6s ease-in-out;
+
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.exp-btn.hide::after {
+  transition: all 0.6s ease-in-out;
+
+  transform: translateY(-100%);
+  opacity: 1;
+}
+
+
 .art-grid {
-  background-color: blue;
+  background-color: var(--bg-dark);
+  box-shadow: inset 0px 0px 92px -29px rgba(0,0,0,0.75);
 
   height: 0;
-  transition: all 1s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  position: relative;
 }
 
 .art-grid.expand {
   height: 300px;
+  overflow: hidden;
+}
+
+
+.moreart-list {
+  padding: 20px 30px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+  gap: 30px;
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.card {
+  max-height: 250px;
+  overflow: hidden;
+  border-radius: 5px;
+
+  box-shadow: 0px 12px 130px -10px rgba(0,0,0,0.75);
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 1060px) {
+  .moreart-list {
+    grid-auto-columns: 35%;
+  }
+}
+
+@media (max-width: 900px) {
+  .moreart-list {
+    grid-auto-columns: 35%;
+  }
+}
+
+@media (max-width: 767px) {
+  .moreart-list {
+    grid-auto-columns: 35%;
+  }
+}
+
+@media (max-width: 480px) {
+  .moreart-list {
+    grid-auto-columns: 85%;
+  }
 }
