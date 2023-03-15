@@ -16,8 +16,8 @@
   height: 70vh;
   overflow: hidden;
 
-  background-image: url('../../assets/images/art-desk.jpg');
-  background-position: bottom;
+  background-image: url('../../assets/images/edited_desk.jpg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }

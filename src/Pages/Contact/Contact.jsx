@@ -1,9 +1,23 @@
 import './contact.css'
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function Contact() {
   const form = useRef()
+
+  const notifySend = () => toast.success("Message sent!", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
 
   const sendEmail = (e) => {
     e.preventDefault()
@@ -16,10 +30,13 @@ function Contact() {
       })
 
       form.current.reset()
+    
+    notifySend()
   }
 
   return (
     <div id='contact' className='contact main-page'>
+      <ToastContainer />
       <section className='contact-main'>
         <div className="contact-head">
           <h1 className='contact-title'>Contact</h1>

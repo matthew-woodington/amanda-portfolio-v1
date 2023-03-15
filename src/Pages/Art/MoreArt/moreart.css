@@ -109,6 +109,14 @@
 
   overflow-x: auto;
   overscroll-behavior-inline: contain;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.art-grid.expand > .moreart-list {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+  transition-delay: 0.4s;
 }
 
 .card {

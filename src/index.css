@@ -27,6 +27,11 @@
   --cursive: 'Playlist-Script', cursive;
   --display: 'Playfair Display', serif;
   --ftnormal: 'Montserrat', sans-serif;
+
+  /* toast */
+  --toastify-color-light: var(--bg-white);
+  --toastify-color-success: var(--orange1);
+  --toastify-text-color-light: var(--bg-dark);
 }
 
 *, *::before, *::after {
@@ -40,4 +45,8 @@
   /* outline: 1px solid red !important;
   opacity: 1 !important;
   visibility: visible !important; */
+}
+
+.Toastify__toast-container--top-right {
+  margin-top: 100px;
 }
