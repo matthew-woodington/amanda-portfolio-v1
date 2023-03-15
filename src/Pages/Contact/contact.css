@@ -72,6 +72,7 @@
   border: 1px solid var(--grey1);
   border-radius: 5px;
   background-color: var(--bg-white);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 .form > input:focus, .form > textarea:focus {

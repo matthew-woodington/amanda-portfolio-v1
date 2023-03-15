@@ -134,13 +134,13 @@
 
 @media (max-width: 900px) {
   .moreart-list {
-    grid-auto-columns: 35%;
+    grid-auto-columns: 45%;
   }
 }
 
 @media (max-width: 767px) {
   .moreart-list {
-    grid-auto-columns: 35%;
+    grid-auto-columns: 55%;
   }
 }
 

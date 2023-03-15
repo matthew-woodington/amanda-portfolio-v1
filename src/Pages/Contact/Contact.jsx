@@ -5,6 +5,19 @@ import emailjs from '@emailjs/browser'
 function Contact() {
   const form = useRef()
 
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs.sendForm("service_alsh3ng", "template_80fomxs", form.current, "KJDJJY2MXtVO7hOvY")
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      })
+
+      form.current.reset()
+  }
+
   return (
     <div id='contact' className='contact main-page'>
       <section className='contact-main'>
@@ -17,7 +30,7 @@ function Contact() {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
           </div>
           <div className="contact-form">
-            <form className='form' ref={form}>
+            <form className='form' ref={form} onSubmit={sendEmail}>
               <label htmlFor="name">Name</label>
               <input type="text" name='user_name' />
               <label htmlFor="email">Email</label>
