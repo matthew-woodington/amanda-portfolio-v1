@@ -44,7 +44,9 @@ function Contact() {
         </div>
         <div className="contact-body">
           <div className="contact-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+            <p>Have an idea?</p>
+            <p>Ready to hear more?</p>
+            <p>Reach out and let's bring your story to life!</p>
           </div>
           <div className="contact-form">
             <form className='form' ref={form} onSubmit={sendEmail}>

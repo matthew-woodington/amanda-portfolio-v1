@@ -20,6 +20,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
+  border-bottom: 20px solid var(--grey1);
 }
 
 .overlay {
@@ -124,8 +126,9 @@
   align-items: center;
 
   position: absolute;
-  bottom: calc((var(--logo-height) / 3) * -1);
+  /* bottom: calc((var(--logo-height) / 3) * -1); */
   left: calc(50% - (var(--logo-width) / 2));
+  bottom: calc(((var(--logo-height) / 2) * -1) + 10px);
 
   background-color: var(--bg-dark);
 

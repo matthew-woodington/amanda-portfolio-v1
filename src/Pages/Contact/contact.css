@@ -52,7 +52,12 @@
 }
 
 .contact-text {
-  text-align: left;
+  text-align: center;
+  font-size: 20px;
+}
+
+.contact-text > p {
+  margin-bottom: 15px;
 }
 
 .form {

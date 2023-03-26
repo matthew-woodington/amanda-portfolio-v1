@@ -25,11 +25,10 @@ function About() {
         <div className='about-text'>
           <div className="text-header">
             <h1 className="bg-text">Hello</h1>
-            <h2 className="about-title">Im Amanda</h2>
+            <h2 className="about-title">I'm Amanda</h2>
           </div>
           <div className="about-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Florida-based artist, Amanda Royaards, was born and raised in the upstate of South Carolina. Coming from an artistic family and starting at a young age, Amanda's love for the arts grew through school classes and extracurricular programs. Amanda later attended Clemson University, where she earned a Bachelors of Science in Marketing with a minor in Visual Arts. During her time at Clemson, the artist enjoyed art history, drawing, and painting courses, further cultivating her creative skillset. Inspired by the world around her, Amanda finds the most peace and enjoyment when spending time in creation, specifically at the beach, watching a sunset, hiking through the Carolina mountains, or traveling to a new place. With an appreciation for details, the artist finds joy in the small moments and strives to bring those moments to life through her work. Through drawing, abstract painting, and photography, Amanda captures special and unseen moments and enjoys sharing them, reflected through her work, with those around her.</p>
           </div>
         </div>
       </div>

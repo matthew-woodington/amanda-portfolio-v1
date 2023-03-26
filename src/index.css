@@ -20,9 +20,10 @@
   --bg-dark: #2D325A;
   --bg-white: #F9F8FD;
   --orange1: #D98F66;
-  --display-text-opacity: #d98e668b;
+  --display-text-opacity: #E1C0AE;
   --display-text-opacity-dark: #2D325A8b;
-  --grey1: #bbbbbb;
+  /* --grey1: #bbbbbb; */
+  --grey1: #E1C0AE;
 
   --cursive: 'Playlist-Script', cursive;
   --display: 'Playfair Display', serif;

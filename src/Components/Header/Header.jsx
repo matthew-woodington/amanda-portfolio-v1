@@ -38,16 +38,16 @@ function Header() {
         <>
           <ul className="socials">
             <li className="social-item">
-              <a className="link" href="#"><FiInstagram /></a>
+              <a className="link" href="#" target='_blank' rel="noreferrer"><FiInstagram /></a>
             </li>
             <li className="social-item">
-              <a className="link" href="#"><FiFacebook /></a>
+              <a className="link" href="#" target='_blank' rel="noreferrer"><FiFacebook /></a>
             </li>
             <li className="social-item">
-              <a className="link" href="#"><FiLinkedin /></a>
+              <a className="link" href="#" target='_blank' rel="noreferrer"><FiLinkedin /></a>
             </li>
             <li className="social-item">
-              <a className="link" href="#"><FiMail /></a>
+              <a className="link" href="#" target='_blank' rel="noreferrer"><FiMail /></a>
             </li>
           </ul>
 
@@ -96,59 +96,21 @@ function Header() {
 
           <ul className="mobile-socials">
             <li className="mobile-social-item">
-              <a className="icon-link" href="#"><FiInstagram /></a>
+              <a className="icon-link" href="#" target='_blank' rel="noreferrer"><FiInstagram /></a>
             </li>
             <li className="mobile-social-item">
-              <a className="icon-link" href="#"><FaFacebookF /></a>
+              <a className="icon-link" href="#" target='_blank' rel="noreferrer"><FaFacebookF /></a>
             </li>
             <li className="mobile-social-item">
-              <a className="icon-link" href="#"><FaLinkedinIn /></a>
+              <a className="icon-link" href="#" target='_blank' rel="noreferrer"><FaLinkedinIn /></a>
             </li>
             <li className="mobile-social-item">
-              <a className="icon-link" href="#"><FiMail /></a>
+              <a className="icon-link" href="#" target='_blank' rel="noreferrer"><FiMail /></a>
             </li>
           </ul>
 
         </div>
       )}
-
-      {/* <div className={menuToggle ? "navigation show" : "navigation hidden"}>
-        <ul className="socials">
-          <li className="social-item">
-            <a className="link" href="#"><FiInstagram /></a>
-          </li>
-          <li className="social-item">
-            <a className="link" href="#"><FiFacebook /></a>
-          </li>
-          <li className="social-item">
-            <a className="link" href="#"><FiLinkedin /></a>
-          </li>
-          <li className="social-item">
-            <a className="link" href="#"><FiMail /></a>
-          </li>
-        </ul>
-
-        <ul className="navlinks">
-          <li className="nav-item">
-            <a className="link" href="#home">Home</a>
-          </li>
-          <li className="nav-item">
-            <a className="link" href="#about">About</a>
-          </li>
-          <li className="nav-item">
-            <a className="link" href="#">Art</a>
-          </li>
-          <li className="nav-item">
-            <a className="link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-
-      <button className={!menuToggle ? "mobile-button" : "mobile-button open"} onClick={() => setMenuToggle(!menuToggle)}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button> */}
 
     </div>
   )

@@ -225,6 +225,7 @@
   z-index: 10;
 
   isolation: isolate;
+  text-align: center;
 }
 
 .info-quote {
