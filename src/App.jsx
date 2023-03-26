@@ -5,6 +5,7 @@ import About from './Pages/About/About'
 import Home from './Pages/Home/Home'
 import Art from './Pages/Art/Art'
 import Contact from './Pages/Contact/Contact'
+import Footer from './Components/Footer/Footer'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Art />
         <Contact />
       </div>
+      <Footer />
     </div>
   )
 }

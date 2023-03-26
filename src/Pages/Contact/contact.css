@@ -36,7 +36,7 @@
 
   position: absolute;
   bottom: -5px;
-  left: 15%;
+  left: 10%;
 }
 
 .contact-body {
@@ -135,6 +135,10 @@
 
   .contact-text {
     margin-bottom: 30px;
+  }
+
+  .send-btn {
+    margin: auto;
   }
 }
 

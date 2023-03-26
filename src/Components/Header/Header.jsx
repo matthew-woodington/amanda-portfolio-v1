@@ -38,16 +38,16 @@ function Header() {
         <>
           <ul className="socials">
             <li className="social-item">
-              <a className="link" href="#" target='_blank' rel="noreferrer"><FiInstagram /></a>
+              <a className="link" href="https://www.instagram.com/mandy_designs_/" target='_blank' rel="noreferrer"><FiInstagram /></a>
             </li>
             <li className="social-item">
-              <a className="link" href="#" target='_blank' rel="noreferrer"><FiFacebook /></a>
+              <a className="link" href="https://www.facebook.com/profile.php?id=100013426179504&mibextid=LQQJ4d" target='_blank' rel="noreferrer"><FiFacebook /></a>
             </li>
             <li className="social-item">
-              <a className="link" href="#" target='_blank' rel="noreferrer"><FiLinkedin /></a>
+              <a className="link" href="https://www.linkedin.com/in/amandaroyaards/" target='_blank' rel="noreferrer"><FiLinkedin /></a>
             </li>
             <li className="social-item">
-              <a className="link" href="#" target='_blank' rel="noreferrer"><FiMail /></a>
+              <a className="link" href="mailto:royaardsam@gmail.com"><FiMail /></a>
             </li>
           </ul>
 
@@ -96,16 +96,16 @@ function Header() {
 
           <ul className="mobile-socials">
             <li className="mobile-social-item">
-              <a className="icon-link" href="#" target='_blank' rel="noreferrer"><FiInstagram /></a>
+              <a className="icon-link" href="https://www.instagram.com/mandy_designs_/" target='_blank' rel="noreferrer"><FiInstagram /></a>
             </li>
             <li className="mobile-social-item">
-              <a className="icon-link" href="#" target='_blank' rel="noreferrer"><FaFacebookF /></a>
+              <a className="icon-link" href="https://www.facebook.com/profile.php?id=100013426179504&mibextid=LQQJ4d" target='_blank' rel="noreferrer"><FaFacebookF /></a>
             </li>
             <li className="mobile-social-item">
-              <a className="icon-link" href="#" target='_blank' rel="noreferrer"><FaLinkedinIn /></a>
+              <a className="icon-link" href="https://www.linkedin.com/in/amandaroyaards/" target='_blank' rel="noreferrer"><FaLinkedinIn /></a>
             </li>
             <li className="mobile-social-item">
-              <a className="icon-link" href="#" target='_blank' rel="noreferrer"><FiMail /></a>
+              <a className="icon-link" href="mailto:royaardsam@gmail.com"><FiMail /></a>
             </li>
           </ul>
 

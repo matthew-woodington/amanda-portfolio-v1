@@ -12,7 +12,7 @@ function About() {
       <div className="about-container">
         <div className='about-media'>
           <div className="studio-container">
-            <div className="overlay"></div>
+            <div className="studio-overlay"></div>
             <img src={studio} alt="" className="studio" />
           </div>
           <div className="portrait-container">
@@ -28,7 +28,8 @@ function About() {
             <h2 className="about-title">I'm Amanda</h2>
           </div>
           <div className="about-content">
-            <p>Florida-based artist, Amanda Royaards, was born and raised in the upstate of South Carolina. Coming from an artistic family and starting at a young age, Amanda's love for the arts grew through school classes and extracurricular programs. Amanda later attended Clemson University, where she earned a Bachelors of Science in Marketing with a minor in Visual Arts. During her time at Clemson, the artist enjoyed art history, drawing, and painting courses, further cultivating her creative skillset. Inspired by the world around her, Amanda finds the most peace and enjoyment when spending time in creation, specifically at the beach, watching a sunset, hiking through the Carolina mountains, or traveling to a new place. With an appreciation for details, the artist finds joy in the small moments and strives to bring those moments to life through her work. Through drawing, abstract painting, and photography, Amanda captures special and unseen moments and enjoys sharing them, reflected through her work, with those around her.</p>
+            <p>Currently Florida-based, I was born and raised in the upstate of South Carolina. Starting at a young age, my love for the arts grew through school classes and extracurricular programs. Later attending Clemson University, I cultivated my creative skillset while earning a Bachelors of Science in Marketing with a minor in Visual Arts.</p>
+            <p>With an appreciation for details, I find joy in the small moments and strive to bring those moments to life through my work. From drawing, abstract painting, photography, and design, I appreciate special and unseen moments and enjoy sharing them with those around me.</p>
           </div>
         </div>
       </div>
